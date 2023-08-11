@@ -22,11 +22,9 @@ const Hero = props => {
             </div>
             <div className="hero__intro">
 
-            {/* <h2 className="hero__welcome">Soy la <span>Dra. Lucia Cortez</span></h2> */}
-            {/* <h3 className="hero__profession">Médico Funcional</h3> */}
             <p className="hero__txt-intro">juntos es posible <br/></p>
             <p className="hero__txt-intro--biger"> <AnimatedText /> </p>
-            <Button />
+            <Button link="https://wa.me/573025261619?text=Me%20interesan%20sus%20servicios%20como%20m%C3%A9dico%20funcional"/>
             </div>
             
         </div>
