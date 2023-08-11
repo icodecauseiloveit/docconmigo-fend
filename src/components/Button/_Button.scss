@@ -1,0 +1,22 @@
+@import '../../scss/base';
+@import '../../scss/colors';
+@import '../../scss/typography';
+
+.btn {
+    -webkit-border-radius: 7;
+    -moz-border-radius: 7;
+    border-radius: 0.3rem;
+    font-family: $welcome-font;
+    color: #201310;
+    font-size: 2em;
+    font-weight: 400;
+    background: #8ec640;
+    padding: 1.5rem 3.5rem 1.5rem 3.5rem;
+
+    &:hover {
+      background: #9ec640;
+      // padding: 1.6rem 3.7rem 1.6rem 3.7rem;
+      // font-size: 2.2em;
+      // color: white;
+    }
+  }

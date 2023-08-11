@@ -1,0 +1,8 @@
+@import './flip-animation';
+
+.animated-text {
+
+  // Apply the flipInX animation mixin
+  @include flipInX; 
+
+}
