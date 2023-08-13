@@ -7,6 +7,12 @@ jobs:
     steps:
     - name: 🚚 Get latest code
       uses: actions/checkout@v3
+
+    - name: Install Dependencies
+      run: npm install
+
+    - name: Install Dependencies
+      run: npm run build
     
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
@@ -14,4 +20,10 @@ jobs:
         server: ${{ vars.FTP_SERVER }}
         username: ${{ vars.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
+        exclude: |
+          **/.git*
+          **/.git*/**
+          **/node_modules/**
+        local-dir: build
+        remote-dir: ../public_html
 
