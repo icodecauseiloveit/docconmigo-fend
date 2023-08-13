@@ -27,9 +27,9 @@ jobs:
     - name: 📂 Upload to FTP Server.
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
-        server: ${{ vars.FTP_SERVER }}
-        username: ${{ vars.FTP_USERNAME }}
-        password: ${{ secrets.FTP_PASSWORD }}
+        server: ftp.docconmigo.com
+        username: nodejs@docconmigo.com
+        password: 1i;cI9AWQI;+
         exclude: |
           **/.git*
           **/.git*/**
