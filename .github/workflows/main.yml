@@ -30,7 +30,7 @@ jobs:
         server: ${{ vars.FTP_SERVER }}
         username: ${{ vars.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
-        local-dir: build/
+        local-dir: build/**
         server-dir: /
         exclude: |
           **/.git*
