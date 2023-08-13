@@ -30,6 +30,8 @@ jobs:
         server: ${{ vars.FTP_SERVER }}
         username: ${{ vars.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
+        source-directory: ./build/
+        target-directory: ./public_html/
         exclude: |
           **/.git*
           **/.git*/**
@@ -38,4 +40,4 @@ jobs:
           .git*
           README*
           pack*
-          build/
+          
