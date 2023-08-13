@@ -5,7 +5,7 @@ on:
     
 name: 🚀 Deploy website on push.
 jobs:
-  web-deploy:
+  deploy:
     name: 🎉 Deploy
     runs-on: ubuntu-latest
       
@@ -28,13 +28,13 @@ jobs:
     #   run: cd build && mkdir build
       
     - name: 📂 Upload to FTP Server.
-      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      uses: ./ #SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
         server: ${{ vars.FTP_SERVER }}
         username: ${{ vars.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
         local-dir: build/
-        server-dir: www/
+        server-dir: public_html/
         exclude: |
           **/.git*
           **/.git*/**
