@@ -13,15 +13,15 @@ jobs:
     - name: 🚚 Get latest code
       uses: actions/checkout@v3
   
-    - name: Set up Node.js
+    - name: Use Node.js 16
       uses: actions/setup-node@v3
       with:
-        node-version: '18'
+        node-version: 18
           
     - name: Install Dependencies
       run: npm install
   
-    - name: Build
+    - name: 🔨 Build Project
       run: npm run build
       
     - name: 📂 Upload to FTP Server
@@ -30,12 +30,15 @@ jobs:
         server: ${{ vars.FTP_SERVER }}
         username: ${{ vars.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
-        local-dir: ./build/
-        remote-dir: ./public_html/
         exclude: |
           **/.git*
           **/.git*/**
           **/node_modules/**
+          **/src/**
+          .git*
+          README*
+          pack*
+
           on: 
             push:
               branches: 
