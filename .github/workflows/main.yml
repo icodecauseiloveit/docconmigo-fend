@@ -14,7 +14,10 @@ jobs:
         server: ${{ vars.FTP_SERVER }}
         username: ${{ vars.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
-
+        exclude: |
+          **/.git*
+          **/.git*/**
+          **/node_modules/**
 
 # on: 
 #   push:
