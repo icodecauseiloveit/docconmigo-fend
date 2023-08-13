@@ -29,8 +29,8 @@ jobs:
         server: ${{ vars.FTP_SERVER }}
         username: ${{ vars.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
-        local-dir: /build
-        remote-dir: /public_html
+        local-dir: ./build/
+        remote-dir: ./public_html/
         exclude: |
           **/.git*
           **/.git*/**
