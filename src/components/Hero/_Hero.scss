@@ -1,6 +1,4 @@
-@import "../../scss/base";
-@import "../../scss/colors";
-@import "../../scss/typography";
+@import "../../scss/index";
 
 .hero {
   width: 100%;
@@ -20,18 +18,18 @@
     }
   }
 
-  &__txt-intro {
+  &__slogan {
     display: flex;
     flex-direction: row;
     justify-content: center;
     color: rgb(199, 197, 197);
     font-family: $welcome-font;
     font-weight: 200;
-    font-size: 2.2em;
+    font-size: 1.5em;
   }
 
-  &__txt-intro--biger {
-    @extend .hero__txt-intro;
+  &__benefits {
+    @extend .hero__slogan;
     font-size: 2.5em;
     font-weight: 300;
 
@@ -50,4 +48,47 @@
     justify-content: center;
   }
 
+  @include phone {
+    &__logo {
+      font-size: 3em;
+      margin-bottom: -0.7rem;
+    }
+
+    &__slogan {
+    }
+
+    &__benefits {
+      font-size: 2em;
+      font-weight: 300;
+
+      margin-bottom: 3rem;
+    }
+
+    &__overlay {
+    }
+
+    border: blue 2px solid;
+  }
+
+  @include tablet {
+    &__logo {
+      font-size: 3em;
+      margin-bottom: -0.7rem;
+    }
+
+    &__slogan {
+    }
+
+    &__benefits {
+      font-size: 2em;
+      font-weight: 300;
+
+      margin-bottom: 3rem;
+    }
+
+    &__overlay {
+    }
+
+    border: green 2px solid;
+  }
 }

@@ -22,8 +22,8 @@ const Hero = props => {
             </div>
             <div className="hero__intro">
 
-            <p className="hero__txt-intro">juntos es posible<br/></p>
-            <p className="hero__txt-intro--biger"> <AnimatedText /> </p>
+            <p className="hero__slogan">juntos es posible<br/></p>
+            <p className="hero__benefits"> <AnimatedText /> </p>
             <Button link="https://wa.me/573025261619?text=Me%20interesan%20sus%20servicios%20como%20m%C3%A9dico%20funcional"/>
             </div>
             
