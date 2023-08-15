@@ -7,7 +7,7 @@ const Home = props => {
     <>
       <Hero />
       <Navbar />
-      <div style={{height: '100rem'}}></div>
+      {/* <div style={{height: '100rem'}}></div> */}
     </>
   )
 }
