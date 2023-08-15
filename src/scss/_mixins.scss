@@ -1,0 +1,58 @@
+/* Extra Small Devices (Phones) */
+@mixin phone {
+    @media (max-width: 576px) {
+      @content;
+    }
+  }
+  
+  /* Small Devices (Tablets) */
+  @mixin tablet {
+    @media (min-width: 577px) and (max-width: 767px) {
+      @content;
+    }
+  }
+  
+  /* Medium Devices (Laptops and Desktops) */
+  @mixin laptop {
+    @media (min-width: 768px) and (max-width: 999px) {
+      @content;
+    }
+  }
+  
+  /* Large Devices (Desktops) */
+  @mixin desktop {
+    @media (min-width: 1000px) {
+      @content;
+    }
+  }
+
+  /*
+  @include phone {
+    &__container {
+        border: blue 2px solid;
+    }
+  }
+
+  @include tablet {
+    &__container {
+        border: green 2px solid;
+    }
+  }
+
+  @include laptop {
+    &__container {
+        border: yellow 2px solid;
+    }
+  }
+
+  @include desktop {
+    &__container {
+        border: orange 2px solid;
+    }
+  }
+
+
+  
+  */
+
+  
