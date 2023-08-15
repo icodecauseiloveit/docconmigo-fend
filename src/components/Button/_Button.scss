@@ -1,6 +1,4 @@
-@import '../../scss/base';
-@import '../../scss/colors';
-@import '../../scss/typography';
+@import '../../scss/index';
 
 .btn {
     -webkit-border-radius: 7;
@@ -19,4 +17,21 @@
       // font-size: 2.2em;
       // color: white;
     }
+
+    @include phone {
+      padding: 0.5rem 3rem 0.5rem 3rem;
+    }
+
+    @include tablet {
+      padding: 0.8rem 3rem 0.8rem 3rem;
+    }
+
+    @include laptop {
+      padding: 0.8rem 3rem 0.8rem 3rem;
+    }
+
+    @include desktop {
+      padding: 0.8rem 3rem 0.8rem 3rem;
+    }
+
   }

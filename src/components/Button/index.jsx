@@ -4,7 +4,7 @@ import './_Button.scss'
 const Button = props => {
   return (
     <>
-      <a href={props.link} target="_blank" rel="noreferrer" className="btn">Agenda tu cita</a>
+      <a href={props.link} target="_blank" rel="noreferrer" className="btn">agenda tu cita</a>
     </>
   )
 }
