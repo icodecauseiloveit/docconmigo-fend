@@ -66,8 +66,6 @@
 
     &__overlay {
     }
-
-    border: blue 2px solid;
   }
 
   @include tablet {
@@ -88,7 +86,5 @@
 
     &__overlay {
     }
-
-    border: green 2px solid;
   }
 }
