@@ -25,7 +25,7 @@ jobs:
       run: npm run build
 
     - name: Create build folder
-      run: cd build && mkdir build
+      run: cd build && mkdir build && cd ..
       
     - name: 📂 Upload to FTP Server.
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
