@@ -1,13 +1,13 @@
 import React from 'react'
 import './_Home.scss'
-import { Hero, Navbar } from '../../components'
+import { Hero, Navbar, Whoami } from '../../components'
  
 const Home = props => {
   return (
     <>
       <Hero />
       <Navbar />
-      {/* <div style={{height: '100rem'}}></div> */}
+      <Whoami />
     </>
   )
 }
