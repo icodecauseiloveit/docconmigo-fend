@@ -1,12 +1,12 @@
 import React from 'react'
-import './Whoami.scss'
+import './_Whoami.scss'
  
 const Whoami = props => {
   return (
     <>
       <section className='whoami'>
         <div className="whoami__container">
-          
+
         </div>
       </section>
     </>
