@@ -25,7 +25,7 @@
   }
 
   &__logo {
-    display: flex;
+    display: none;
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -36,8 +36,6 @@
     font-weight: bolder;
     color: white;
     font-size: 2.5em;
-
-    
   }
 
   &__menu {
@@ -59,7 +57,7 @@
     background-color: $color-primary;
     padding: 0.5rem 1rem 0.5rem 1rem;
     border-radius: 5px;
-    color:black;
+    color: black;
     font-weight: 500;
     margin-left: 1rem;
   }
@@ -69,86 +67,84 @@
     justify-content: flex-end;
     align-items: center;
     font-size: 1.3em;
-    
   }
 
   @include phone {
     &__container {
-        // border: blue 2px solid;
-        flex-direction: column;
-        align-items: center;
+      flex-direction: column;
+      align-items: center;
     }
     &__menu {
-        flex-direction: column;
+      flex-direction: column;
     }
     &__links {
-        font-size: 1.5em;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+      font-size: 1.5em;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
     &__auth {
-        flex-direction: column;
-        font-size: 1.5em; 
+      flex-direction: column;
+      font-size: 1.5em;
     }
     &__link {
-        color: white;
-        margin: 0;
-        flex: content;
+      color: white;
+      margin: 0;
+      flex: content;
+
+      &:hover {
+        color: $color-primary;
       }
-      &__btn {
-        background-color: $color-primary;
-        padding: 0.5rem 1rem 0.5rem 1rem;
-        border-radius: 5px;
-        color:black;
-        font-weight: 500;
-        margin: 0;
-        margin-top: 0.5rem;
-      }
+
+    }
+    &__btn {
+      background-color: $color-primary;
+      padding: 0.5rem 1rem 0.5rem 1rem;
+      border-radius: 5px;
+      color: black;
+      font-weight: 500;
+      margin: 0;
+      margin-top: 0.5rem;
+    }
   }
 
   @include tablet {
     &__container {
-        // border: green 2px solid;
-        flex-direction: column;
-        align-items: center;
+      flex-direction: column;
+      align-items: center;
     }
     &__logo-txt {
-        font-size: 2em;
+      font-size: 2em;
     }
     &__links {
-        font-size: 1em;
+      font-size: 1em;
     }
     &__link {
-        color: white;
-        margin: 0 2rem 0 0  ;
-      }
+      color: white;
+      margin: 0 2rem 0 0;
+    }
     &__auth {
-        font-size: 1em; 
+      font-size: 1em;
     }
     &__menu {
-        padding: 0 1rem;
-      }
+      padding: 0 1rem;
+    }
   }
 
   @include laptop {
-    // &__container {
-    //     border: yellow 2px solid;
-    // }
-    &__links {
-        font-size: 1em;
-    }
-    &__auth {
-        font-size: 1em; 
+    &__link {
+      margin-left: 0;
+      margin-right: 2rem;
     }
   }
 
   @include desktop {
     &__container {
-        max-width: 1200px;
-        // border: orange 2px solid;
+      max-width: 1200px;
+    }
+
+    &__logo {
+      display: flex;
     }
   }
-
-
 }
