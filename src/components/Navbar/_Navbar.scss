@@ -51,6 +51,10 @@
   &__link {
     color: white;
     margin-left: 2rem;
+
+    &:hover {
+      color: $color-primary;
+    }
   }
 
   &__btn {
@@ -91,11 +95,6 @@
       color: white;
       margin: 0;
       flex: content;
-
-      &:hover {
-        color: $color-primary;
-      }
-
     }
     &__btn {
       background-color: $color-primary;
