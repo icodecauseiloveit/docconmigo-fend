@@ -1,0 +1,36 @@
+@import '../../scss/index';
+
+.animated-image-container {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 5rem 3rem; /* Espacio del borde */
+    z-index: 9999; /* Asegura que esté por encima del contenido */
+    // width: 75px;
+    &__animated-image {
+        width: 150px; /* Ajusta el tamaño según tu necesidad */
+        transition: transform 0.3s ease-in-out;
+    }
+    
+    &__image-link:hover .animated-image {
+        transform: scale(1.1); /* Cambia el tamaño en la animación de atención */
+    }
+
+    @include phone {
+        border: blue 2px solid;
+    }
+    
+      @include tablet {
+        border: green 2px solid;
+    }
+    
+      @include laptop {
+        border: yellow 2px solid;
+    }
+    
+      @include desktop {
+        border: orange 2px solid;
+    }
+}
+
+
